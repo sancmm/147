@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>147-DRIVE - Simulador Modular</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+  <!-- Navbar -->
+  <header class="bg-blue-700 text-white p-4 flex justify-between items-center shadow-lg">
+    <h1 class="text-2xl font-bold">147-DRIVE</h1>
+    <nav>
+      <a href="#proyecto" class="mx-2 hover:underline">Proyecto</a>
+      <a href="#caracteristicas" class="mx-2 hover:underline">Características</a>
+      <a href="#impacto" class="mx-2 hover:underline">Impacto</a>
+      <a href="#tecnico" class="mx-2 hover:underline">Técnico</a>
+      <a href="#galeria" class="mx-2 hover:underline">Galería</a>
+      <a href="#contacto" class="mx-2 hover:underline">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="text-center py-20 bg-gradient-to-r from-blue-500 to-indigo-600 text-white">
+    <h2 class="text-4xl font-bold mb-4">Simulador Modular de Conducción</h2>
+    <p class="text-lg max-w-2xl mx-auto">Un proyecto educativo, sustentable y accesible que combina Arduino, impresión 3D y creatividad para democratizar la simulación de manejo.</p>
+  </section>
+
+  <!-- Proyecto -->
+  <section id="proyecto" class="p-8 max-w-5xl mx-auto">
+    <h3 class="text-3xl font-bold mb-4">¿Qué es 147-DRIVE?</h3>
+    <p class="mb-4">
+      147-DRIVE es un simulador modular de conducción que combina accesibilidad, tecnología y aprendizaje práctico.
+      Se trata de un sistema artesanal que ofrece una alternativa realista y económica a los costosos periféricos de simulación.
+    </p>
+    <p>
+      Basado en Arduino, incluye un volante, pedalera y palanca de cambios secuencial, que convierten movimientos físicos en señales digitales interpretadas por una PC como joystick.
+    </p>
+  </section>
+
+  <!-- Características -->
+  <section id="caracteristicas" class="bg-gray-200 p-8">
+    <h3 class="text-3xl font-bold mb-6 text-center">Características Principales</h3>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h4 class="text-xl font-semibold mb-2">Volante</h4>
+        <p>Encoder rotativo para un ángulo de giro preciso, con pulsador central programable.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h4 class="text-xl font-semibold mb-2">Pedalera</h4>
+        <p>Tres potenciómetros lineales de 10 kΩ que registran la presión en acelerador, freno y embrague.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h4 class="text-xl font-semibold mb-2">Palanca</h4>
+        <p>Microinterruptores configurados en entradas digitales, simulando cambios secuenciales.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Impacto -->
+  <section id="impacto" class="p-8 max-w-5xl mx-auto">
+    <h3 class="text-3xl font-bold mb-4">Impacto del Proyecto</h3>
+    <ul class="list-disc ml-6">
+      <li><strong>Comercial:</strong> Kit económico para escuelas y gamers.</li>
+      <li><strong>Social:</strong> Promueve inclusión digital y aprendizaje tecnológico.</li>
+      <li><strong>Ambiental:</strong> Construcción sustentable con materiales reciclados.</li>
+    </ul>
+  </section>
+
+  <!-- Técnico -->
+  <section id="tecnico" class="bg-gray-200 p-8">
+    <h3 class="text-3xl font-bold mb-6 text-center">Descripción Técnica</h3>
+    <p class="mb-4">
+      El simulador funciona con un Arduino Leonardo que procesa las señales en tiempo real y las comunica vía USB como dispositivo HID (joystick).
+    </p>
+    <ul class="list-disc ml-6">
+      <li>Pedales → Potenciómetros en A0, A1, A2.</li>
+      <li>Palanca → Microinterruptores en pines digitales.</li>
+      <li>Volante → Encoder rotativo + pulsador central.</li>
+      <li>Expansión modular: freno de mano, LEDs, app de diagnóstico.</li>
+    </ul>
+  </section>
+
+  <!-- Galería -->
+  <section id="galeria" class="p-8 max-w-6xl mx-auto">
+    <h3 class="text-3xl font-bold mb-6 text-center">Galería</h3>
+    <div class="grid md:grid-cols-3 gap-6">
+      <img src="imagenes/volante.jpg" alt="Volante del simulador" class="rounded-xl shadow">
+      <img src="imagenes/pedalera.jpg" alt="Pedalera 147-DRIVE" class="rounded-xl shadow">
+      <img src="imagenes/palanca.jpg" alt="Palanca de cambios" class="rounded-xl shadow">
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="bg-blue-700 text-white p-8 text-center">
+    <h3 class="text-2xl font-bold mb-4">Contacto</h3>
+    <p>Proyecto desarrollado por un estudiante de San Carlos de Bariloche.</p>
+    <p>📧 <a href="mailto:santiago.cerda@cts.edu.ar" class="underline">santiago.cerda@cts.edu.ar</a></p>
+  </section>
+
+  <footer class="text-center py-4 bg-gray-800 text-gray-300">
+    © 2025 147-DRIVE - Todos los derechos reservados.
+  </footer>
+
+</body>
+</html>
+
